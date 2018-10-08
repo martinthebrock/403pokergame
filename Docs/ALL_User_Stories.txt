@@ -1,0 +1,67 @@
+5 As a player I want to shuffle cards so I can know the randomness.
+3 As a player I would like a new book so I can understand the rules of the game.
+13 As a player I will like to set of rules I can play by.
+4 As a player I want to be able to choose graphic options.
+
+2 As a dealer I want to deal cards so I can initiate a new game.
+5 As a player I want to interact with the game so I can play it
+8 As a player I wanted to toriel so I can know how to play
+1 As a card I want to change skin so I can look different
+100 As a dev team I want to implement an AI so I can create opponents of various difficulties
+
+8 As a player I want to see the cars being dealt so I can understand what is happening
+0.5 As a company we want to provide access to a gambling addiction hotline so we can protect ourselves from liability
+3 As a player I want royalty free music so I can have a better atmosphere
+5 As a player I want big or small blinds to be able to call, raise, or fold so I can have meaningful gameplay
+? As a player I want to have a main menu and settings so I can customize my playing experience
+20 As a player I want to be able to play against AI so I can practice without using real money
+
+2 As a player I want to be able to call so I can continue playing
+2 As a player I want to be able to fold so I can stop losing
+8 As a hand I want to have a value so I can know my ranking
+5 As a player I want to go all-in so I can raise the stakes
+5 As a player I want to be able to emote so I can Flex on the haters and express myself
+
+3 As a dealer I want to shuffle so I can initiate a new game
+2 As a player I want to buy chips so I can play in the game
+1 As a poker chip I want to have a value so I can spend
+8 As a company we want to advertise gambling addiction so that we can cover our self
+
+5 As a player I want to have meaningful card combinations so I can play the game
+3 As a player I want to decide what to do on my turn so I can play strategically
+2 As a dealer I want to shuffle so that the cards aren't stacked
+1 As a player I want to know how much money I have so I know when to quit
+
+5 As a dealer I want to be able to shuffle the deck so I can make the game playable
+8 As a player I want to be able to play with my chips so I can show my skill
+20 As a player I want to have the option of themed decks so I can brag about being cooler than the other players
+5 As a player I want to be able to leave the game so I can rage quit
+20 As a player I want to be able to flip the table so I can rage quit
+5 As the house I want to be able to change the value of the chips
+8 As the cards I want to be dealt to the player so I can be played with
+3 As a player I want to be able to see how much money I have so I can make some more game decisions
+
+5 As a spectator I want to spectate so I can learn
+2 As a card I want to be dealt so I can be used
+13 As a player I want to start a game so I can play
+2 As a player I want to fold so I don't lose
+8 As a player I want to chat so I can taunt
+8 As a security admin I want to monitor so I can kick players
+8 As a player I want to customize game experience so I can personalize the game
+3 As a player I want to change game difficulty so I can create a more challenging game
+13 As a player I want to see high scores so I can make the game more competitive
+
+3 As a player I want to be able to join a new game with other players so I can play
+3 As a player I want to be able to leave a game and retain the chips I have won or lost so I can build my chip count
+5 As a player I would like to be able to change my avatar so that I can customize my look in the game
+
+3 As a player I want to have a win condition to save the game
+2 As a player I want to leave the game so I can go home
+5 As a player I want to hide cards so I can win
+3 As a dealer I want to kick players so I can keep the game fair
+2 As a dealer I want to switch decks to keep people from counting cards
+
+3 As a player I want to vote on game type initially so I can choose the game I want to play
+2 As a player I want to have a list of options so I can choose what move I want to make
+5 As a dealer I want to be able to time-out players so I can ensure forward progress of the game
+8 As a dealer I want to rate hands/play/moves based on game rules so I can maintain order allow gameplay
