@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomePokerGameSln", "AwesomePokerGameSln\AwesomePokerGameSln.csproj", "{B03EDB48-91CC-4332-BCC7-3F3819FE8785}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B42AA45F-6FCD-4EBC-BED1-D60746E83CDB} = {B42AA45F-6FCD-4EBC-BED1-D60746E83CDB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerLogic", "PokerLogic\PokerLogic.csproj", "{B42AA45F-6FCD-4EBC-BED1-D60746E83CDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{B03EDB48-91CC-4332-BCC7-3F3819FE8785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B03EDB48-91CC-4332-BCC7-3F3819FE8785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B03EDB48-91CC-4332-BCC7-3F3819FE8785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42AA45F-6FCD-4EBC-BED1-D60746E83CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42AA45F-6FCD-4EBC-BED1-D60746E83CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42AA45F-6FCD-4EBC-BED1-D60746E83CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42AA45F-6FCD-4EBC-BED1-D60746E83CDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

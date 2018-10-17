@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AwesomePokerGameSln.Code.CardImageHelper" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\CardImageHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.Code.Deck">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACAAAAAAAAgAAAAAAQAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Code\Deck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.Code.Hand" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Hand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.FrmPlaygame">
+    <Position X="6.75" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAIAAiEAABAAAASAAAACACAsAEQAAEAIAQAAAAA=</HashCode>
+      <FileName>FrmPlaygame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.FrmTitle" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAABAAADCAKCACAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>FrmTitle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.Program" Collapsed="true">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBIYCUAAAAAIRFLCRoAJMwggSxQUUAOLQtAwIAQBJqA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AwesomePokerGameSln.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="AwesomePokerGameSln.Code.HandType" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAARAACAAACCCAAAAAAAAAAAAAAAAAAIAAIAA=</HashCode>
+      <FileName>Code\Hand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
