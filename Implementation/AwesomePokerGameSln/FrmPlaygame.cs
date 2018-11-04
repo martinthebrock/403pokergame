@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CardType = System.Tuple<int, int>;
-using WMPLib;
 
 namespace AwesomePokerGameSln {
   public partial class FrmPlaygame : Form {
@@ -18,12 +17,9 @@ namespace AwesomePokerGameSln {
     private PictureBox[] dealerCardPics;
     private Hand playerHand;
     private Hand dealerHand;
-    WindowsMediaPlayer player = new WindowsMediaPlayer();
 
     public FrmPlaygame() {
       InitializeComponent();
-      player.settings.setMode("loop", true);
-      player.URL = "g1g2_jump.mp3";
       playerCardPics = new PictureBox[5];
       for (int c = 1; c <= 5; c++) {
         playerCardPics[c - 1] = this.Controls.Find("picCard" + c.ToString(), true)[0] as PictureBox;
@@ -63,7 +59,6 @@ namespace AwesomePokerGameSln {
     }
 
     private void FrmPlaygame_Load(object sender, EventArgs e) {
-      player.controls.play();
       deck = new Deck();
       dealCards();
     }

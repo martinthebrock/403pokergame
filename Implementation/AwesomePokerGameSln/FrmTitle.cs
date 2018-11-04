@@ -29,7 +29,6 @@ namespace AwesomePokerGameSln {
       Hide();
     }
 
-<<<<<<< HEAD
     private void btnFullScreen_Click(object sender, EventArgs e){
         this.TopMost = true;
         this.FormBorderStyle = FormBorderStyle.None;
@@ -40,11 +39,4 @@ namespace AwesomePokerGameSln {
     private void FrmTitle_Load(object sender, EventArgs e){
     }
   }
-=======
-        private void FrmTitle_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
->>>>>>> 2ddd4ca9d9469b9f4a9171c17fa7b9e82942fc28
 }
