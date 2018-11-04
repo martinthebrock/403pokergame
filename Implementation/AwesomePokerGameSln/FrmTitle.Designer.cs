@@ -29,7 +29,10 @@ namespace AwesomePokerGameSln {
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnViewRuleBook = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btnFullScreen = new System.Windows.Forms.Button();
+=======
+>>>>>>> 2ddd4ca9d9469b9f4a9171c17fa7b9e82942fc28
             this.label2 = new System.Windows.Forms.Label();
             this.picRulebook = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picRulebook)).BeginInit();
@@ -83,6 +86,7 @@ namespace AwesomePokerGameSln {
             this.btnQuit.UseVisualStyleBackColor = false;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
+<<<<<<< HEAD
             // btnFullScreen
             // 
             this.btnFullScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -95,6 +99,8 @@ namespace AwesomePokerGameSln {
             this.btnFullScreen.UseVisualStyleBackColor = false;
             this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
             // 
+=======
+>>>>>>> 2ddd4ca9d9469b9f4a9171c17fa7b9e82942fc28
             // label2
             // 
             this.label2.AutoSize = true;
@@ -126,9 +132,15 @@ namespace AwesomePokerGameSln {
             this.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.title_screen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(950, 560);
+<<<<<<< HEAD
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.picRulebook);
             this.Controls.Add(this.label2);
+=======
+            this.Controls.Add(this.picRulebook);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnQuit);
+>>>>>>> 2ddd4ca9d9469b9f4a9171c17fa7b9e82942fc28
             this.Controls.Add(this.btnViewRuleBook);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.label1);
