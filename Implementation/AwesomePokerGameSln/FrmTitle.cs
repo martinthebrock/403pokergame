@@ -29,11 +29,19 @@ namespace AwesomePokerGameSln {
       Hide();
     }
 
-    private void btnFullScreen_Click(object sender, EventArgs e){
-        this.TopMost = true;
-        this.FormBorderStyle = FormBorderStyle.None;
-        this.WindowState = FormWindowState.Maximized;
-        Hide();
+    private void btnFullScreen_Click(object sender, EventArgs e)
+    {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+            }
+
+            else if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
     }
 
     private void FrmTitle_Load(object sender, EventArgs e){

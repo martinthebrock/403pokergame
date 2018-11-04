@@ -86,10 +86,10 @@ namespace AwesomePokerGameSln {
             // btnFullScreen
             // 
             this.btnFullScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnFullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFullScreen.Location = new System.Drawing.Point(712, 469);
+            this.btnFullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFullScreen.Location = new System.Drawing.Point(745, -1);
             this.btnFullScreen.Name = "btnFullScreen";
-            this.btnFullScreen.Size = new System.Drawing.Size(211, 87);
+            this.btnFullScreen.Size = new System.Drawing.Size(150, 67);
             this.btnFullScreen.TabIndex = 3;
             this.btnFullScreen.Text = "Full Screen";
             this.btnFullScreen.UseVisualStyleBackColor = false;
@@ -131,6 +131,7 @@ namespace AwesomePokerGameSln {
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnViewRuleBook);
             this.Controls.Add(this.btnNewGame);
+            this.Controls.Add(this.btnFullScreen);
             this.Controls.Add(this.label1);
             this.Name = "FrmTitle";
             this.Text = "Awesome Poker Game";
