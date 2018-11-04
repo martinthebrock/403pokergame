@@ -86,12 +86,12 @@ namespace AwesomePokerGameSln {
             // btnFullScreen
             // 
             this.btnFullScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnFullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFullScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFullScreen.Location = new System.Drawing.Point(745, -1);
             this.btnFullScreen.Name = "btnFullScreen";
-            this.btnFullScreen.Size = new System.Drawing.Size(150, 67);
+            this.btnFullScreen.Size = new System.Drawing.Size(120, 57);
             this.btnFullScreen.TabIndex = 3;
-            this.btnFullScreen.Text = "Full Screen";
+            this.btnFullScreen.Text = "Toggle Full Screen";
             this.btnFullScreen.UseVisualStyleBackColor = false;
             this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
             // 

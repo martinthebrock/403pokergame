@@ -29,6 +29,8 @@
       this.picCard5 = new System.Windows.Forms.PictureBox();
       this.picCard2 = new System.Windows.Forms.PictureBox();
       this.button1 = new System.Windows.Forms.Button();
+      this.btnFullScreen = new System.Windows.Forms.Button();
+      this.btnQuit = new System.Windows.Forms.Button();
       this.lblHandType = new System.Windows.Forms.Label();
       this.pictureBox1 = new System.Windows.Forms.PictureBox();
       this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -102,9 +104,29 @@
       this.button1.UseVisualStyleBackColor = true;
       this.button1.Click += new System.EventHandler(this.button1_Click);
       // 
+      // btnFullScreen
+      //
+      this.btnFullScreen.Location = new System.Drawing.Point(680, 334);
+      this.btnFullScreen.Name = "btnFullScreen";
+      this.btnFullScreen.Size = new System.Drawing.Size(90, 37);
+      this.btnFullScreen.TabIndex = 3;
+      this.btnFullScreen.Text = "Toggle Full Screen";
+      this.btnFullScreen.UseVisualStyleBackColor = true;
+      this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
+      // 
+      // btnQuit
+      //
+      this.btnQuit.Location = new System.Drawing.Point(680, 384);
+      this.btnQuit.Name = "btnQuit";
+      this.btnQuit.Size = new System.Drawing.Size(90, 37);
+      this.btnQuit.TabIndex = 3;
+      this.btnQuit.Text = "Quit";
+      this.btnQuit.UseVisualStyleBackColor = true;
+      this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+      // 
       // lblHandType
       // 
-      this.lblHandType.AutoSize = true;
+    this.lblHandType.AutoSize = true;
       this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.lblHandType.Location = new System.Drawing.Point(428, 345);
       this.lblHandType.Name = "lblHandType";
@@ -169,6 +191,8 @@
       this.Controls.Add(this.pictureBox5);
       this.Controls.Add(this.lblHandType);
       this.Controls.Add(this.button1);
+      this.Controls.Add(this.btnFullScreen);
+      this.Controls.Add(this.btnQuit);
       this.Controls.Add(this.picCard2);
       this.Controls.Add(this.picCard5);
       this.Controls.Add(this.picCard4);
@@ -201,6 +225,8 @@
     private System.Windows.Forms.PictureBox picCard5;
     private System.Windows.Forms.PictureBox picCard2;
     private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button btnFullScreen;
+    private System.Windows.Forms.Button btnQuit;
     private System.Windows.Forms.Label lblHandType;
     private System.Windows.Forms.PictureBox pictureBox1;
     private System.Windows.Forms.PictureBox pictureBox2;
