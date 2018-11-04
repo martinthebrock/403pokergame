@@ -41,6 +41,7 @@ namespace AwesomePokerGameSln {
             else if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = FormBorderStyle.FixedSingle;
             }
     }
 
