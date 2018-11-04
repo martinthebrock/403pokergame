@@ -28,5 +28,15 @@ namespace AwesomePokerGameSln {
       frmPlaygame.Show();
       Hide();
     }
+
+    private void btnFullScreen_Click(object sender, EventArgs e){
+        this.TopMost = true;
+        this.FormBorderStyle = FormBorderStyle.None;
+        this.WindowState = FormWindowState.Maximized;
+        Hide();
+    }
+
+    private void FrmTitle_Load(object sender, EventArgs e){
+    }
   }
 }
