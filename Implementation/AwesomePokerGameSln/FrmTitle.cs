@@ -28,10 +28,5 @@ namespace AwesomePokerGameSln {
       frmPlaygame.Show();
       Hide();
     }
-
-        private void FrmTitle_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
+  }
 }
