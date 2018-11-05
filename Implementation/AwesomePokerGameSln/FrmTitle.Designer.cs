@@ -30,6 +30,7 @@ namespace AwesomePokerGameSln {
             this.btnViewRuleBook = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
             this.btnFullScreen = new System.Windows.Forms.Button();
+            this.btnReportBug = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.picRulebook = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picRulebook)).BeginInit();
@@ -90,10 +91,22 @@ namespace AwesomePokerGameSln {
             this.btnFullScreen.Location = new System.Drawing.Point(745, -1);
             this.btnFullScreen.Name = "btnFullScreen";
             this.btnFullScreen.Size = new System.Drawing.Size(120, 57);
-            this.btnFullScreen.TabIndex = 3;
+            this.btnFullScreen.TabIndex = 6;
             this.btnFullScreen.Text = "Toggle Full Screen";
             this.btnFullScreen.UseVisualStyleBackColor = false;
             this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
+            // 
+            // btnReportBug
+            // 
+            this.btnReportBug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnReportBug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportBug.Location = new System.Drawing.Point(745, 58);
+            this.btnReportBug.Name = "btnReportBug";
+            this.btnReportBug.Size = new System.Drawing.Size(120, 57);
+            this.btnReportBug.TabIndex = 7;
+            this.btnReportBug.Text = "Report Bug";
+            this.btnReportBug.UseVisualStyleBackColor = false;
+            this.btnReportBug.Click += new System.EventHandler(this.btnReportBug_Click);
             // 
             // label2
             // 
@@ -132,6 +145,7 @@ namespace AwesomePokerGameSln {
             this.Controls.Add(this.btnViewRuleBook);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.btnFullScreen);
+            this.Controls.Add(this.btnReportBug);
             this.Controls.Add(this.label1);
             this.Name = "FrmTitle";
             this.Text = "Awesome Poker Game";
@@ -149,6 +163,7 @@ namespace AwesomePokerGameSln {
         private System.Windows.Forms.Button btnViewRuleBook;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnFullScreen;
+        private System.Windows.Forms.Button btnReportBug;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picRulebook;
   }
