@@ -1,4 +1,7 @@
-﻿namespace AwesomePokerGameSln {
+﻿using System;
+using System.Windows.Forms;
+
+namespace AwesomePokerGameSln {
   partial class FrmPlaygame {
     /// <summary>
     /// Required designer variable.
@@ -126,7 +129,7 @@
       // 
       // lblHandType
       // 
-    this.lblHandType.AutoSize = true;
+      this.lblHandType.AutoSize = true;
       this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.lblHandType.Location = new System.Drawing.Point(428, 345);
       this.lblHandType.Name = "lblHandType";
@@ -216,8 +219,7 @@
       this.PerformLayout();
 
     }
-
-    #endregion
+        #endregion
 
     private System.Windows.Forms.PictureBox picCard1;
     private System.Windows.Forms.PictureBox picCard3;
