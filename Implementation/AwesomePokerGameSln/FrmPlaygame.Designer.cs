@@ -1,4 +1,7 @@
-﻿namespace AwesomePokerGameSln {
+﻿using System;
+using System.Windows.Forms;
+
+namespace AwesomePokerGameSln {
   partial class FrmPlaygame {
     /// <summary>
     /// Required designer variable.
@@ -29,12 +32,16 @@
             this.picCard5 = new System.Windows.Forms.PictureBox();
             this.picCard2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnFullScreen = new System.Windows.Forms.Button();
+            this.btnQuit = new System.Windows.Forms.Button();
             this.lblHandType = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnViewRuleBook = new System.Windows.Forms.Button();
+            this.picRulebook = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCard3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCard4)).BeginInit();
@@ -45,6 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRulebook)).BeginInit();
             this.SuspendLayout();
             // 
             // picCard1
@@ -102,6 +110,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnFullScreen
+            // 
+            this.btnFullScreen.Location = new System.Drawing.Point(680, 334);
+            this.btnFullScreen.Name = "btnFullScreen";
+            this.btnFullScreen.Size = new System.Drawing.Size(90, 37);
+            this.btnFullScreen.TabIndex = 3;
+            this.btnFullScreen.Text = "Toggle Full Screen";
+            this.btnFullScreen.UseVisualStyleBackColor = true;
+            this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
+            // 
+            // btnQuit
+            // 
+            this.btnQuit.Location = new System.Drawing.Point(680, 377);
+            this.btnQuit.Name = "btnQuit";
+            this.btnQuit.Size = new System.Drawing.Size(90, 37);
+            this.btnQuit.TabIndex = 3;
+            this.btnQuit.Text = "Quit";
+            this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
+            // 
             // lblHandType
             // 
             this.lblHandType.AutoSize = true;
@@ -157,11 +185,33 @@
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             // 
+            // btnViewRuleBook
+            // 
+            this.btnViewRuleBook.Location = new System.Drawing.Point(584, 377);
+            this.btnViewRuleBook.Name = "btnViewRuleBook";
+            this.btnViewRuleBook.Size = new System.Drawing.Size(90, 37);
+            this.btnViewRuleBook.TabIndex = 2;
+            this.btnViewRuleBook.Text = "View Rule Book";
+            this.btnViewRuleBook.UseVisualStyleBackColor = false;
+            this.btnViewRuleBook.Click += new System.EventHandler(this.btnViewRuleBook_Click);
+            // 
+            // picRulebook
+            // 
+            this.picRulebook.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.rule_book;
+            this.picRulebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRulebook.Location = new System.Drawing.Point(117, 31);
+            this.picRulebook.Name = "picRulebook";
+            this.picRulebook.Size = new System.Drawing.Size(505, 311);
+            this.picRulebook.TabIndex = 5;
+            this.picRulebook.TabStop = false;
+            this.picRulebook.Visible = false;
+            // 
             // FrmPlaygame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picRulebook);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
@@ -169,11 +219,14 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.lblHandType);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFullScreen);
+            this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.picCard2);
             this.Controls.Add(this.picCard5);
             this.Controls.Add(this.picCard4);
             this.Controls.Add(this.picCard3);
             this.Controls.Add(this.picCard1);
+            this.Controls.Add(this.btnViewRuleBook);
             this.Name = "FrmPlaygame";
             this.Text = "FrmPlaygame";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPlaygame_FormClosed);
@@ -188,12 +241,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRulebook)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
     }
-
-    #endregion
+        #endregion
 
     private System.Windows.Forms.PictureBox picCard1;
     private System.Windows.Forms.PictureBox picCard3;
@@ -201,11 +254,15 @@
     private System.Windows.Forms.PictureBox picCard5;
     private System.Windows.Forms.PictureBox picCard2;
     private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button btnFullScreen;
+    private System.Windows.Forms.Button btnQuit;
     private System.Windows.Forms.Label lblHandType;
     private System.Windows.Forms.PictureBox pictureBox1;
     private System.Windows.Forms.PictureBox pictureBox2;
     private System.Windows.Forms.PictureBox pictureBox3;
     private System.Windows.Forms.PictureBox pictureBox4;
     private System.Windows.Forms.PictureBox pictureBox5;
-  }
+    private System.Windows.Forms.Button btnViewRuleBook;    //rulebook
+    private System.Windows.Forms.PictureBox picRulebook;    //rulebook
+    }
 }
