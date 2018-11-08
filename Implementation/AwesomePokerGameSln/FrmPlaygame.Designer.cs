@@ -136,7 +136,7 @@ namespace AwesomePokerGameSln {
             // 
             this.lblHandType.AutoSize = true;
             this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHandType.Location = new System.Drawing.Point(428, 345);
+            this.lblHandType.Location = new System.Drawing.Point(401, 334);
             this.lblHandType.Name = "lblHandType";
             this.lblHandType.Size = new System.Drawing.Size(99, 33);
             this.lblHandType.TabIndex = 7;
@@ -201,7 +201,8 @@ namespace AwesomePokerGameSln {
             // 
             this.picRulebook.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.rule_book;
             this.picRulebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picRulebook.Location = new System.Drawing.Point(117, 31);
+            this.picRulebook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picRulebook.Location = new System.Drawing.Point(144, 31);
             this.picRulebook.Name = "picRulebook";
             this.picRulebook.Size = new System.Drawing.Size(505, 311);
             this.picRulebook.TabIndex = 5;

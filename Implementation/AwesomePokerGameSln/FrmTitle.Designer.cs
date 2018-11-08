@@ -124,6 +124,7 @@ namespace AwesomePokerGameSln {
             // 
             this.picRulebook.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.rule_book;
             this.picRulebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRulebook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picRulebook.Location = new System.Drawing.Point(229, 114);
             this.picRulebook.Name = "picRulebook";
             this.picRulebook.Size = new System.Drawing.Size(505, 311);
