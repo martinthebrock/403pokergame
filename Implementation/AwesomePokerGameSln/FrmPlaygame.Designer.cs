@@ -44,6 +44,8 @@ namespace AwesomePokerGameSln {
             this.picRulebook = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblHandTypeDealer = new System.Windows.Forms.Label();
+            this.lblWin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCard3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCard4)).BeginInit();
@@ -60,7 +62,7 @@ namespace AwesomePokerGameSln {
             // picCard1
             // 
             this.picCard1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picCard1.Location = new System.Drawing.Point(76, 183);
+            this.picCard1.Location = new System.Drawing.Point(73, 251);
             this.picCard1.Name = "picCard1";
             this.picCard1.Size = new System.Drawing.Size(112, 120);
             this.picCard1.TabIndex = 0;
@@ -69,7 +71,7 @@ namespace AwesomePokerGameSln {
             // picCard3
             // 
             this.picCard3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picCard3.Location = new System.Drawing.Point(345, 183);
+            this.picCard3.Location = new System.Drawing.Point(342, 251);
             this.picCard3.Name = "picCard3";
             this.picCard3.Size = new System.Drawing.Size(112, 120);
             this.picCard3.TabIndex = 1;
@@ -78,7 +80,7 @@ namespace AwesomePokerGameSln {
             // picCard4
             // 
             this.picCard4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picCard4.Location = new System.Drawing.Point(480, 183);
+            this.picCard4.Location = new System.Drawing.Point(477, 251);
             this.picCard4.Name = "picCard4";
             this.picCard4.Size = new System.Drawing.Size(112, 120);
             this.picCard4.TabIndex = 2;
@@ -87,7 +89,7 @@ namespace AwesomePokerGameSln {
             // picCard5
             // 
             this.picCard5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picCard5.Location = new System.Drawing.Point(619, 183);
+            this.picCard5.Location = new System.Drawing.Point(616, 251);
             this.picCard5.Name = "picCard5";
             this.picCard5.Size = new System.Drawing.Size(112, 120);
             this.picCard5.TabIndex = 3;
@@ -96,7 +98,7 @@ namespace AwesomePokerGameSln {
             // picCard2
             // 
             this.picCard2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picCard2.Location = new System.Drawing.Point(211, 183);
+            this.picCard2.Location = new System.Drawing.Point(208, 251);
             this.picCard2.Name = "picCard2";
             this.picCard2.Size = new System.Drawing.Size(112, 120);
             this.picCard2.TabIndex = 4;
@@ -104,7 +106,7 @@ namespace AwesomePokerGameSln {
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(180, 334);
+            this.button1.Location = new System.Drawing.Point(309, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(179, 86);
             this.button1.TabIndex = 6;
@@ -114,7 +116,7 @@ namespace AwesomePokerGameSln {
             // 
             // btnFullScreen
             // 
-            this.btnFullScreen.Location = new System.Drawing.Point(680, 334);
+            this.btnFullScreen.Location = new System.Drawing.Point(696, 377);
             this.btnFullScreen.Name = "btnFullScreen";
             this.btnFullScreen.Size = new System.Drawing.Size(90, 37);
             this.btnFullScreen.TabIndex = 3;
@@ -124,7 +126,7 @@ namespace AwesomePokerGameSln {
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(680, 377);
+            this.btnQuit.Location = new System.Drawing.Point(600, 377);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(90, 37);
             this.btnQuit.TabIndex = 3;
@@ -136,16 +138,17 @@ namespace AwesomePokerGameSln {
             // 
             this.lblHandType.AutoSize = true;
             this.lblHandType.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHandType.Location = new System.Drawing.Point(401, 334);
+            this.lblHandType.Location = new System.Drawing.Point(498, 219);
             this.lblHandType.Name = "lblHandType";
-            this.lblHandType.Size = new System.Drawing.Size(99, 33);
+            this.lblHandType.Size = new System.Drawing.Size(178, 33);
             this.lblHandType.TabIndex = 7;
-            this.lblHandType.Text = "label2";
+            this.lblHandType.Text = "player hand";
+            this.lblHandType.Click += new System.EventHandler(this.lblHandType_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(211, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(73, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 120);
             this.pictureBox1.TabIndex = 12;
@@ -154,7 +157,7 @@ namespace AwesomePokerGameSln {
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(619, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(208, 80);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(112, 120);
             this.pictureBox2.TabIndex = 11;
@@ -163,7 +166,7 @@ namespace AwesomePokerGameSln {
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(480, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(342, 80);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(112, 120);
             this.pictureBox3.TabIndex = 10;
@@ -172,7 +175,7 @@ namespace AwesomePokerGameSln {
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(345, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(477, 80);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(112, 120);
             this.pictureBox4.TabIndex = 9;
@@ -181,7 +184,7 @@ namespace AwesomePokerGameSln {
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(76, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(616, 80);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(112, 120);
             this.pictureBox5.TabIndex = 8;
@@ -189,7 +192,7 @@ namespace AwesomePokerGameSln {
             // 
             // btnViewRuleBook
             // 
-            this.btnViewRuleBook.Location = new System.Drawing.Point(584, 377);
+            this.btnViewRuleBook.Location = new System.Drawing.Point(504, 377);
             this.btnViewRuleBook.Name = "btnViewRuleBook";
             this.btnViewRuleBook.Size = new System.Drawing.Size(90, 37);
             this.btnViewRuleBook.TabIndex = 2;
@@ -202,7 +205,7 @@ namespace AwesomePokerGameSln {
             this.picRulebook.BackgroundImage = global::AwesomePokerGameSln.Properties.Resources.rule_book;
             this.picRulebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picRulebook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picRulebook.Location = new System.Drawing.Point(144, 31);
+            this.picRulebook.Location = new System.Drawing.Point(148, 60);
             this.picRulebook.Name = "picRulebook";
             this.picRulebook.Size = new System.Drawing.Size(505, 311);
             this.picRulebook.TabIndex = 5;
@@ -213,7 +216,7 @@ namespace AwesomePokerGameSln {
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 58);
+            this.label1.Location = new System.Drawing.Point(70, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 13;
@@ -223,18 +226,40 @@ namespace AwesomePokerGameSln {
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 230);
+            this.label2.Location = new System.Drawing.Point(70, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "You";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // lblHandTypeDealer
+            // 
+            this.lblHandTypeDealer.AutoSize = true;
+            this.lblHandTypeDealer.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHandTypeDealer.Location = new System.Drawing.Point(498, 48);
+            this.lblHandTypeDealer.Name = "lblHandTypeDealer";
+            this.lblHandTypeDealer.Size = new System.Drawing.Size(179, 33);
+            this.lblHandTypeDealer.TabIndex = 15;
+            this.lblHandTypeDealer.Text = "dealer hand";
+            // 
+            // lblWin
+            // 
+            this.lblWin.AutoSize = true;
+            this.lblWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblWin.Location = new System.Drawing.Point(202, 219);
+            this.lblWin.Name = "lblWin";
+            this.lblWin.Size = new System.Drawing.Size(62, 33);
+            this.lblWin.TabIndex = 16;
+            this.lblWin.Text = "win";
+            this.lblWin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FrmPlaygame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 490);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picRulebook);
@@ -243,7 +268,6 @@ namespace AwesomePokerGameSln {
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.lblHandType);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnFullScreen);
             this.Controls.Add(this.btnQuit);
@@ -253,6 +277,9 @@ namespace AwesomePokerGameSln {
             this.Controls.Add(this.picCard3);
             this.Controls.Add(this.picCard1);
             this.Controls.Add(this.btnViewRuleBook);
+            this.Controls.Add(this.lblHandTypeDealer);
+            this.Controls.Add(this.lblHandType);
+            this.Controls.Add(this.lblWin);
             this.Name = "FrmPlaygame";
             this.Text = "FrmPlaygame";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPlaygame_FormClosed);
@@ -292,5 +319,7 @@ namespace AwesomePokerGameSln {
     private System.Windows.Forms.PictureBox picRulebook;    //rulebook
         private Label label1;
         private Label label2;
+        private Label lblHandTypeDealer;
+        private Label lblWin;
     }
 }

@@ -27,9 +27,7 @@ namespace AwesomePokerGameSln.Code {
 
     public HandType getHandType() {
       HandType handType = HandType.HIGH;
-
-
-
+            
       int[] faces = cards.Select(card => card.Item1).ToArray();
       int uniqueCount = faces.Distinct().Count();
       switch (uniqueCount) {
